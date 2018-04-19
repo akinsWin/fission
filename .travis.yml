@@ -34,11 +34,12 @@ env:
 script:
   - cd ${TRAVIS_BUILD_DIR}
   - glide install -v
-  - ./fission-bundle/build.sh
-  - hack/verify-gofmt.sh
-  - hack/verify-govet.sh
-  - hack/runtests.sh
   - test/build_and_test.sh
+  #- ./fission-bundle/build.sh
+  #- hack/verify-gofmt.sh
+  #- hack/verify-govet.sh
+  #- hack/runtests.sh
+  #- test/build_and_test.sh
 
 notifications:
   slack:
