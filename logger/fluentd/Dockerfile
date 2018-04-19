@@ -40,7 +40,7 @@ RUN apt-get -qq update && \
     # Install logging agent and required gems
     /usr/bin/curl -sSL https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent2.sh | sh && \
     sed -i -e "s/USER=td-agent/USER=root/" -e "s/GROUP=td-agent/GROUP=root/" /etc/init.d/td-agent && \
-    td-agent-gem install --no-document fluent-plugin-record-reformer -v 0.8.2 && \
+    td-agent-gem install --no-document fluent-plugin-record-modifier -v 1.0.2 && \
     td-agent-gem install --no-document fluent-plugin-systemd -v 0.0.5 && \
     td-agent-gem install --no-document fluent-plugin-google-cloud -v 0.5.2 && \
     td-agent-gem install --no-document fluent-plugin-detect-exceptions -v 0.0.4 && \
