@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#test:disabled
+
 set -euo pipefail
 
 # Use package command to create two packages one with source 
